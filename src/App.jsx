@@ -72,12 +72,12 @@ const certificates = [
   {
     title: "JavaScript for Beginners",
     description: "Simplilearn SkillUP · June 2026",
-    image: "public/images/javascript.png",
+    image: "/images/javascript.png",
   },
   {
     title: "React for Beginners",
     description: "Simplilearn SkillUP · October 2026",
-    image: "public/images/react.png",
+    image: "/images/react.png",
   },
 
 ];
