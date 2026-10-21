@@ -72,12 +72,12 @@ const certificates = [
   {
     title: "JavaScript for Beginners",
     description: "Simplilearn SkillUP · June 2026",
-    image: "javascript.png",
+    image: "public/images/javascript.png",
   },
   {
     title: "React for Beginners",
     description: "Simplilearn SkillUP · October 2026",
-    image: "react.png",
+    image: "public/images/react.png",
   },
 
 ];
@@ -296,10 +296,10 @@ export default function App() {
                       className="project-image"
                       loading="lazy"
                     />
-                    
+
                     <strong>{project.preview}</strong>
                     <span className="preview-mark">↗</span>
-                    
+
                     <span className="preview-number">PROJECT 0{index + 1}</span>
                     <strong>{project.preview}</strong>
                     <span className="preview-mark">↗</span>
@@ -362,6 +362,7 @@ export default function App() {
           </div>
         </section>
 
+
         <section className="section" id="certificates">
           <div className="container">
             <SectionTitle
@@ -372,28 +373,26 @@ export default function App() {
 
             <div className="certificates-grid">
               {certificates.map((certificate) => (
-                <article className="glass-card certificate-card" key={certificate.title}>
-                  {certificate.image ? (
-                    <img src={certificate.image} alt={certificate.title} />
-                  ) : (
-                    <div className="certificate-placeholder">
-                      <span>✧</span>
-                      <strong>Certificate</strong>
-                    </div>
-                  )}
+                <article
+                  className="glass-card certificate-card"
+                  key={certificate.title}
+                >
+                  <img
+                    src={certificate.image}
+                    alt={`${certificate.title} certificate`}
+                    loading="lazy"
+                  />
 
                   <div className="certificate-body">
                     <h3>{certificate.title}</h3>
                     <p className="muted">{certificate.description}</p>
-                    <span className="small-note">
-                      Add your actual certificate image and link.
-                    </span>
                   </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
+
 
         <section className="section section-alt" id="contact">
           <div className="container">
@@ -420,7 +419,11 @@ export default function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span>💼</span>
+                  <span className="social-logo linkedin-logo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                      <path d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8 18H5V9h3v9ZM6.5 7.75a1.75 1.75 0 1 1 0-3.5 1.75 1.75 0 0 1 0 3.5ZM19 18h-3v-4.5c0-1.08-.02-2.47-1.5-2.47s-1.73 1.17-1.73 2.39V18h-3V9h2.88v1.23h.04A3.16 3.16 0 0 1 15.54 8.5C18.57 8.5 19 10.49 19 13.08V18Z" />
+                    </svg>
+                  </span>
                   <div>
                     <strong>LinkedIn</strong>
                     <p>Let's connect professionally</p>
@@ -434,7 +437,11 @@ export default function App() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span>💻</span>
+                  <span className="social-logo github-logo" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+                      <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.29-1.23-1.63-1.23-1.63-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.59 1.21 3.22.93.1-.72.39-1.21.7-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.04-1.14 3.04-1.14.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3.01 0 4.29-2.61 5.23-5.1 5.51.4.35.75 1.03.75 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z" />
+                    </svg>
+                  </span>
                   <div>
                     <strong>GitHub</strong>
                     <p>Explore my code and projects</p>

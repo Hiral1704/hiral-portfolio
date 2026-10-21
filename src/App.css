@@ -775,6 +775,26 @@ a {
   min-height: 120px;
 }
 
+.social-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.linkedin-logo {
+  color: #0a66c2;
+}
+
+.github-logo {
+  color: #ffffff;
+}
+
+.social-logo svg {
+  display: block;
+}
+
+
 .submit-btn {
   justify-self: start;
 }
