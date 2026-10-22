@@ -22,8 +22,6 @@ const projects = [
       "A full-featured blog application with post creation, editing and deletion. State is managed with Redux Toolkit, and a JSON Server acts as the REST API backend.",
     tech: ["React.js", "Redux Toolkit", "JSON Server", "CRUD Operations"],
     image: "/images/blog.png",
-    preview: "MY BLOG",
-    style: "blog-preview",
     github: "https://github.com/Hiral1704/Blog-Project",
     demo: "",
   },
@@ -42,8 +40,6 @@ const projects = [
       "A user-friendly e-commerce website for Ayurvedic products, designed to provide a smooth and simple online shopping experience.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/ayurvedic.png",
-    preview: "AYURVEDIC STORE",
-    style: "student-preview",
     github: "",
     demo: "",
   },
@@ -296,13 +292,6 @@ export default function App() {
                       className="project-image"
                       loading="lazy"
                     />
-
-                    <strong>{project.preview}</strong>
-                    <span className="preview-mark">↗</span>
-
-                    <span className="preview-number">PROJECT 0{index + 1}</span>
-                    <strong>{project.preview}</strong>
-                    <span className="preview-mark">↗</span>
                   </div>
 
                   <div className="project-body">
