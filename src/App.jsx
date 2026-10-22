@@ -23,7 +23,7 @@ const projects = [
     tech: ["React.js", "Redux Toolkit", "JSON Server", "CRUD Operations"],
     image: "/images/blog.png",
     github: "https://github.com/Hiral1704/Blog-Project",
-    demo: "",
+    demo: "https://drive.google.com/file/d/1M_yOzodPHLDNEDpBaMk1HrB4szU2D9Rm/view?usp=sharing",
   },
   {
     title: "VrajraVarahi Website",
@@ -32,7 +32,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express.js", "MySQL"],
     image: "/images/vrajra.png",
     github: "",
-    demo: "",
+    demo: "https://www.vrajravarahi.com/",
   },
   {
     title: "Ayurvedic E-commerce Website",
@@ -40,8 +40,17 @@ const projects = [
       "A user-friendly e-commerce website for Ayurvedic products, designed to provide a smooth and simple online shopping experience.",
     tech: ["HTML", "CSS", "JavaScript"],
     image: "/images/ayurvedic.png",
-    github: "",
-    demo: "",
+    github: "https://github.com/Hiral1704/ayurvedic-web",
+    demo: "https://drive.google.com/file/d/1kyvFhKZMztuUQ8eIk_1GZJwzwyXaTL0z/view?usp=sharing",
+  },
+  {
+    title: "Guess My Number Game",
+    description:
+      "An interactive number guessing game where users guess a secret number between 1 and 100. Features include score tracking, attempt counting, previous guesses, high score saving, and a restart option with a responsive user interface.",
+    tech: ["HTML", "CSS", "JavaScript", "DOM Manipulation", "Local Storage"],
+    image: "/images/guess-game.png",
+    github: "https://github.com/Hiral1704/Number-Guessing-Game",
+    demo: "https://drive.google.com/file/d/15o3ECOcw3any8Aamv4bllrrTvKEES8Hp/view?usp=sharing"
   },
 ];
 
@@ -310,7 +319,7 @@ export default function App() {
                           Live Demo ↗
                         </a>
                       ) : (
-                        <span className="muted">Add live link</span>
+                        <span className="muted">Add live video link</span>
                       )}
 
                       {project.github ? (
